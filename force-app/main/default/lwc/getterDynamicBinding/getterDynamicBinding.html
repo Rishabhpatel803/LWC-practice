@@ -1,0 +1,17 @@
+<template>
+    <lightning-card variant="narrow" title="Dynamic Binding Using Getter" icon-name="standard:account">
+        <div class="slds-var-p-around_medium lgc-bg">
+            <lightning-input type="text" name="firstName" label="Enter your First Name" onchange={handleChange}></lightning-input>
+            <lightning-input type="text" name="lastName" label="Enter your Last Name" onchange={handleChange}></lightning-input>
+            <br/>
+            <p class="slds-var-p-horizontal_small">Hello Mr {upperCaseName}</p>
+            <br/>
+            <br/>
+            <lightning-input type="text" name="firstNameOne" label="Enter your First Name" onchange={handleButtonChange}></lightning-input>
+            <lightning-input type="text" name="lastNameOne" label="Enter your Last Name" onchange={handleButtonChange}></lightning-input>
+            <lightning-button variant="brand" label="Submit" title="Submit" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            <br/>
+            <p class="slds-var-p-horizontal_small">Hello Mr{outputuser} using Button</p>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card variant="narrow" title="Dynamic Binding" icon-name="standard:account">
+        <p class="slds-var-p-horizontal_small">Hello {myValue}</p>
+        <div class="slds-var-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter your name" value={myValue} onchange={handleChange}></lightning-input>
+
+            <lightning-input type="text" label="Enter your Username" value={inputUser} onchange={handleButtonChange}></lightning-input>
+            <br>
+            <lightning-button variant="brand" label="Submit" title="Submit" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            <p class="slds-var-p-horizontal_small">Hello {outputuser}</p>
+        </div>
+    </lightning-card>
+</template>
