@@ -36,6 +36,6 @@ export default class GetterDynamicBinding extends LightningElement {
     }
 
     handleClick(){
-        this.outputuser = upperCaseNameButton();
+        this.outputuser = this.upperCaseNameButton;
     }
 }
