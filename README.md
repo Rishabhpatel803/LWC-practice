@@ -25,7 +25,7 @@ Password : Rock@rishabh1
 
 ### Practice Scenarios : Salesforce Diaries (<https://salesforcediaries.com/category/lwc-practice-scenarios>)
 
-#### Beginner : Scenario 3
+#### Beginner : Scenario 3(Done)
 
 #### Intermediate : Scenario 2, Scenario 4, Scenario 6, Scenario 7, Scenario 9, Scenario 10, Scenario 11, Scenario 12
 
