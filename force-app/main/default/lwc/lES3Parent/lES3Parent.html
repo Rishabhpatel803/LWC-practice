@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Parent Component Selector">
+        <div class="slds-var-p-around_medium">
+            <lightning-combobox
+                name="parentcombo"
+                label="Select a value"
+                value={selectedValue}
+                placeholder="Select Value"
+                options={option}
+                onchange={handleChange}>
+            </lightning-combobox>
+        </div>
+        <c-l-E-S-3-Child passdata={selectedValue}></c-l-E-S-3-Child>
+    </lightning-card>
+</template>

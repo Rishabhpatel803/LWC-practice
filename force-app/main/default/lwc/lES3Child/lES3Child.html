@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Child Component Value">
+        <div class="slds-var-p-around_medium">
+            <template if:true={namevalue}>
+                <lightning-input name="nameInput" label="Input Name" placeholder="Input Name"></lightning-input>
+            </template>
+            <template if:true={phonevalue}>
+                <lightning-input name="phoneInput" label="Input Phone No" placeholder="Input Phone"></lightning-input>
+            </template>
+            <template if:true={emailvalue}>
+                <lightning-input name="emailInput" label="Input Your Email" placeholder="Input Your Email"></lightning-input>
+            </template>
+        </div>
+    </lightning-card>
+</template>
