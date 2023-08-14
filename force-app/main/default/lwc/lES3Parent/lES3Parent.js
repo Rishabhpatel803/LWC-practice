@@ -12,6 +12,5 @@ export default class LES3Parent extends LightningElement {
     }
     handleChange(event){
         this.selectedValue = event.detail.value;
-        console.log("####selected value",this.selectedValue);
     }
 }

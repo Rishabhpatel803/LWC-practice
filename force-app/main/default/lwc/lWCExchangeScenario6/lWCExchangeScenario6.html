@@ -3,9 +3,17 @@
         <div class="slds-var-p-around_medium">
             <lightning-input label="Transaction Name" name="tName" required></lightning-input>
             
-            <lightning-combobox label="Success Code" name="sCode" value="" placeholder="Select Success Code" options={option} onchange={handleChange} required></lightning-combobox>
+            <lightning-combobox
+                label="Success Code"
+                name="sCode"
+                value={selectedCode}
+                placeholder="Select Success Code"
+                options={selectedCode}
+                onchange={handleCodeChange}
+                required>
+            </lightning-combobox>
             
-            <lightning-combobox label="Account" name="acc" onchange={handleChange} required>
+            <lightning-combobox label="Account" name="acc" onchange={handleAccChange} required>
                 <ul if:true={accountAutocomplete}>
                     <template for:each={accountAutocomplete} for:item="account">
                         <li key={account.Id} onclick={selectAccount}>{account.Name}</li>
@@ -13,7 +21,7 @@
                 </ul>
             </lightning-combobox>
             
-            <lightning-input label="Message" name="msg" read-only required></lightning-input>
+            <lightning-input label="Message" name="msg" value={selectedMsgCode} read-only required></lightning-input>
             <br/>
             
             <lightning-button label="Save" variant="brand" onclick={handleClick}></lightning-button>
