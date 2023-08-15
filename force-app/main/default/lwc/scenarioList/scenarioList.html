@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title="Scenario List with Code Link">
+        <div class="slds-var-p-around_medium">
+            <lightning-accordion>
+                <lightning-accordion-section name="Scenario 3" label="Scenario 3">
+                    <div class="slds-box">
+                        <div>Conditional Show/Hide of Lightning Input in Child from Parent</div>
+                        <br/>
+                        <div class="slds-grid">
+                            <a href={urlScenario3} class="slds-button slds-button_brand slds-col" target={urlScenario3}>Show Scenario</a>
+                            <a href={urlSolution3Parent} class="slds-button slds-button_brand slds-col" target={urlSolution3Parent}>Parent Component</a>
+                            <a href={urlSolution3Child} class="slds-button slds-button_brand slds-col" target={urlSolution3Child}>Child Component</a>
+                        </div>
+                    </div>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Scenario 6" label="Scenario 6">
+                    <div class="slds-box">
+                        <div>Get Custom Metadata and Populate Value in Lightning Web Component Record Form. There is a reuseable component used in this class. You can find in the Reuseable Component Section</div>
+                        <br/>
+                        <div class="slds-grid">
+                            <a href={urlScenario6} class="slds-button slds-button_brand slds-col" target={urlScenario6}>Show Scenario</a>
+                            <a href={urlSolution6} class="slds-button slds-button_brand slds-col" target={urlSolution6}>LWC Component</a>
+                            <a href={urlApex6} class="slds-button slds-button_brand slds-col" target={urlApex6}>Apex Class</a>
+                        </div>
+                    </div>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Reuseable Components" label="Reuseable Components">
+                    <div class="slds-box">
+                        <div>Here are the list of all the reuseable components used in all the LWC scenarios.</div>
+                        <br/>
+                        <div class="slds-grid">
+                            <h2>Account Search</h2>
+                            <br/>
+                            <br/>
+                            <a href={accountSearchLWC} class="slds-button slds-button_brand slds-col" target={accountSearchLWC}>LWC Component</a>
+                            <a href={accountSearchApex} class="slds-button slds-button_brand slds-col" target={accountSearchApex}>Apex Class</a>
+                        </div>
+                    </div>
+                </lightning-accordion-section>
+            </lightning-accordion>
+        </div>
+    </lightning-card>
+</template>
