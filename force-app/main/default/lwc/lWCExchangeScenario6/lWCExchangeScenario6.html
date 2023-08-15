@@ -13,13 +13,10 @@
                 required>
             </lightning-combobox>
             
-            <lightning-combobox label="Account" name="acc" onchange={handleAccChange} required>
-                <ul if:true={accountAutocomplete}>
-                    <template for:each={accountAutocomplete} for:item="account">
-                        <li key={account.Id} onclick={selectAccount}>{account.Name}</li>
-                    </template>
-                </ul>
-            </lightning-combobox>
+            <c-account-search label="Select Account" selected-icon-name="standard:account" object-label="Account"
+                object-api-name="Account" field-api-name="Name" other-field-api-name="Industry"
+                onvalueselected={handleValueSelectedOnAccount}>
+            </c-account-search>
             
             <lightning-input label="Message" name="msg" value={selectedMsgCode} read-only required></lightning-input>
             <br/>

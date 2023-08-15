@@ -1,13 +1,11 @@
 import { LightningElement, track, wire } from 'lwc';
-import getAccounts from '@salesforce/apex/scenarioHandler.getAccounts';
 import getSuccessCode from '@salesforce/apex/getDetails.getSuccessCode';
 
 export default class LWCExchangeScenario6 extends LightningElement {
 
     @track selectedCode = [];
-    accountAutocomplete = [];
     selectedMsgCode = '';
-    accountName = '';
+    parentAccountSelectedRecord;
     error;
 
     connectedCallback(){
@@ -29,9 +27,11 @@ export default class LWCExchangeScenario6 extends LightningElement {
         // this handle change function is for the code combobox change
         this.selectedMsgCode = event.detail.value;
     }
-    selectAccount(event){
-        const selectAccountId = event.currentTarget.key;
+
+    handleValueSelectedOnAccount(event) {
+        this.parentAccountSelectedRecord = event.detail;
     }
+
     handleClick(){
         // this handle click function  button is for the button
     }
