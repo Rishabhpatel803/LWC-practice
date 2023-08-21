@@ -2,6 +2,18 @@
     <lightning-card title="Scenario List with Code Link">
         <div class="slds-var-p-around_medium">
             <lightning-accordion>
+                <lightning-accordion-section name="Scenario 2" label="Scenario 2">
+                    <div class="slds-box">
+                        <div>Create a Lightning Web Component which can be placed in a Lightning App Page where users can do quick calculations like Addition, Subtraction, Multiplication & Division.</div>
+                        <br/>
+                        <div class="slds-grid">
+                            <a href={urlScenario2} class="slds-button slds-button_brand slds-col" target={urlScenario2}>Show Scenario</a>
+                            <a href={urlSolution2Parent} class="slds-button slds-button_brand slds-col" target={urlSolution2Parent}>Parent Component</a>
+                            <a href={urlSolution2Child} class="slds-button slds-button_brand slds-col" target={urlSolution2Child}>Child Component</a>
+                        </div>
+                    </div>
+                </lightning-accordion-section>
+
                 <lightning-accordion-section name="Scenario 3" label="Scenario 3">
                     <div class="slds-box">
                         <div>Conditional Show/Hide of Lightning Input in Child from Parent</div>
@@ -10,6 +22,18 @@
                             <a href={urlScenario3} class="slds-button slds-button_brand slds-col" target={urlScenario3}>Show Scenario</a>
                             <a href={urlSolution3Parent} class="slds-button slds-button_brand slds-col" target={urlSolution3Parent}>Parent Component</a>
                             <a href={urlSolution3Child} class="slds-button slds-button_brand slds-col" target={urlSolution3Child}>Child Component</a>
+                        </div>
+                    </div>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Scenario 4" label="Scenario 4">
+                    <div class="slds-box">
+                        <div>work on writing a service component in Lightning Web Component to calculate distance between two coordinates when location coordinates are passed to it as parameter.</div>
+                        <br/>
+                        <div class="slds-grid">
+                            <a href={urlScenario4} class="slds-button slds-button_brand slds-col" target={urlScenario4}>Show Scenario</a>
+                            <a href={urlSolution4} class="slds-button slds-button_brand slds-col" target={urlSolution4}>Main Component</a>
+                            <a href={urlSolution4Service} class="slds-button slds-button_brand slds-col" target={urlSolution4Service}>Service Class</a>
                         </div>
                     </div>
                 </lightning-accordion-section>
@@ -30,12 +54,18 @@
                     <div class="slds-box">
                         <div>Here are the list of all the reuseable components used in all the LWC scenarios.</div>
                         <br/>
-                        <div class="slds-grid">
-                            <h2>Account Search</h2>
-                            <br/>
-                            <br/>
-                            <a href={accountSearchLWC} class="slds-button slds-button_brand slds-col" target={accountSearchLWC}>LWC Component</a>
-                            <a href={accountSearchApex} class="slds-button slds-button_brand slds-col" target={accountSearchApex}>Apex Class</a>
+                        <div>
+                            <h1>Scenario 4 Service Class</h1>
+                            <div class="slds-grid">
+                                <a href={urlSolution4Service} class="slds-button slds-button_brand slds-col" target={urlSolution4Service}>LWC Component</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>Account Search</h1>
+                            <div class="slds-grid">
+                                <a href={accountSearchLWC} class="slds-button slds-button_brand slds-col" target={accountSearchLWC}>LWC Component</a>
+                                <a href={accountSearchApex} class="slds-button slds-button_brand slds-col" target={accountSearchApex}>Apex Class</a>    
+                            </div>
                         </div>
                     </div>
                 </lightning-accordion-section>
