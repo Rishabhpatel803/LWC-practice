@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Scenario 2 Child">
+        <div class="slds-var-p-around_medium">
+            <lightning-button variant="brand" label="+" name="addition" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="-" name="subtraction" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="*" name="multiplication" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="/" name="division" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+            <lightning-input type="number" value={calculatedValue} read-only></lightning-input>
+        </div>
+    </lightning-card>
+</template>

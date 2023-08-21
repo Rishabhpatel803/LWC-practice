@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Scenario 2 Parent">
+        <div class="slds-var-p-around_medium">
+            <lightning-input type="number" name="valueOne" label="Enter a number" placeholder="Enter a number" onchange={handleChange}></lightning-input>
+            <lightning-input type="number" name="valueTwo" label="Enter a number" placeholder="Enter a number" onchange={handleChange}></lightning-input>
+        </div>
+        <c-scenario-Two-Child passdataone={valueOne} passdatatwo={valueTwo}></c-scenario-Two-Child>
+    </lightning-card>
+</template>
