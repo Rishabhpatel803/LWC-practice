@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Distance Calculator">
+        <div class="slds-var-p-around_medium">
+            <lightning-input-location label="First Location" onchange={handleChange}></lightning-input-location>
+        </div>
+        <div class="slds-var-p-around_medium">
+            <lightning-input-location label="Second Location" onchange={handleSecondChange}></lightning-input-location>
+        </div>
+        <div class="slds-var-p-around_medium">
+            <lightning-button variant="brand" label="Calculate Distance" onclick={handleClick}></lightning-button>
+        </div>
+        <div class="slds-var-p-around_medium">
+            <h1 style="text-align: center; ">Distance between two Location is {distance}</h1>
+        </div>
+    </lightning-card>
+</template>
