@@ -8,10 +8,7 @@ export default class ScenarioTwoChild extends LightningElement {
     handleClick(event){
         const currentEvent = event.target.name;
         if(currentEvent === 'addition'){
-            console.log(this.passdataone);
-            console.log(this.passdatatwo);
-            this.calculatedValue = this.passdataone + this.passdatatwo;
-            console.log(this.calculatedValue);
+            this.calculatedValue = parseInt(this.passdataone) + parseInt(this.passdatatwo);
         }else if(currentEvent === 'subtraction'){
             this.calculatedValue = this.passdataone - this.passdatatwo;
         }else if(currentEvent === 'multiplication'){
