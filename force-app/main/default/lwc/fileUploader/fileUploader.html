@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="File Uploader Scenario 11">
+        <div class="slds-var-p-around_medium">
+            <lightning-file-upload 
+                label="Upload Files"
+                name="fileUploader"
+                accept={accedptedFormat}
+                record-id={myRecordId}
+                onuploadfinished={handleFinished}
+                multiple>
+            </lightning-file-upload>
+            <br/>
+            <lightning-datatable 
+                key-field="id"
+                data={data}
+                columns={column}>
+            </lightning-datatable>
+            </div>
+    </lightning-card>
+</template>
