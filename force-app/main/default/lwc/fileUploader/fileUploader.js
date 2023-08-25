@@ -1,23 +1,25 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 
 const column = [
     {label: 'File Name', fieldName: 'fileUploadName'},
 ];
 
 export default class FileUploader extends LightningElement {
-    data = [];
+    @track data = [];
     column = column;
-    uploadedFilesName;
     get accedptedFormat(){
         return ['.pdf', '.png'];
     }
     handleFinished(event){
-        const uploadFiles = event.detail.files;
-        console.log(uploadFiles);
-        for(const getName in uploadFiles){
-            const data = `{"fileUploadName": ${uploadFiles[getName].name}}`;
-            console.log(data);
-        }
-        alert('No of uploaded Files :'+ uploadFiles.length);
+        const uploadedFiles = event.detail.files;
+        const newFiles = [];
+
+        uploadedFiles.forEach(file => {
+            newFiles.push({
+                fileUploadName: file.name,
+            });
+        });
+
+        this.data = [...this.data, ...newFiles];
     }
 }
