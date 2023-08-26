@@ -1,4 +1,5 @@
 import { LightningElement } from 'lwc';
+import pubsub from 'c/pubsub';
 
 export default class DataFiller extends LightningElement {
 
@@ -17,7 +18,12 @@ export default class DataFiller extends LightningElement {
         }
     }
 
-    handleClick(event){
-        
+    handleClick(){
+        let message = {
+            "name" : this.name,
+            "phone" : this.phone,
+            "country" : this.country
+        };
+        pubsub.fire('dataEvent', message);
     }
 }
