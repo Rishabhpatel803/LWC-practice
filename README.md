@@ -27,6 +27,6 @@ Password : Rock@rishabh1
 
 #### Beginner : Scenario 3(Done)
 
-#### Intermediate : Scenario 2(Done), Scenario 4(Done), Scenario 6(Done), Scenario 7(Done), Scenario 9, Scenario 10, Scenario 11(Done), Scenario 12
+#### Intermediate : Scenario 2(Done), Scenario 4(Done), Scenario 6(Done), Scenario 7(Done), Scenario 9, Scenario 10, Scenario 11(Done), Scenario 12(Done)
 
 #### Advanced : Scenario 1, Scenario 5, Scenario 8
