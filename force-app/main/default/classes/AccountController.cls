@@ -10,4 +10,9 @@ public with sharing class AccountController {
         String key = '%' + keyword + '%';
         return [SELECT Id, Name from Account WHERE Name LIKE:key LIMIT 10];
     }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Account> getList(){
+        return [SELECT Id, Name, CreatedDate, Owner.Name, Account_Status__c FROM Account];
+    }
 }
