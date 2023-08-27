@@ -18,6 +18,19 @@ export default class ScenarioList extends LightningElement {
     urlSolution6 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/lWCExchangeScenario6';
     urlApex6 = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/getDetails.cls';
 
+    urlScenario7 = 'https://salesforcediaries.com/2022/10/21/lwc-exchange-scenario-7';
+    urlSolution7Main = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/dataFiller';
+    urlSolution7Other = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/personTable';
+    urlSolutionPubSub = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/pubsub';
+
+    urlScenario11 = 'https://salesforcediaries.com/2023/05/28/lwc-exchange-scenario-11';
+    urlSolution11 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/fileUploader';
+
+    urlScenario12 = 'https://salesforcediaries.com/2023/05/28/lwc-exchange-scenario-12';
+    urlSolution12 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/customLightningDataTable';
+    urlApex12 = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/AccountController.cls';
+    urlSolution12Support = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/customDataTable';
+
     accountSearchLWC = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/accountSearch';
     accountSearchApex = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/ReusableLookupController.cls';
 }
