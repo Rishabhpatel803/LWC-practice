@@ -9,7 +9,7 @@ export default class Subscriber extends LightningElement {
 
     regiser(){
         window.console.log("event registered");
-        pubsub.regiseter("simepleEvent", this.handleEvent.bind(this));// if you dont bind then pubsub fire method  then it cannot identify where file is located
+        pubsub.register("simepleEvent", this.handleEvent.bind(this));// if you dont bind then pubsub fire method  then it cannot identify where file is located
     }
 
     handleEvent(messageFromEvt) {
