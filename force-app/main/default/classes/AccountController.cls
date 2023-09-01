@@ -15,4 +15,14 @@ public with sharing class AccountController {
     public static List<Account> getList(){
         return [SELECT Id, Name, CreatedDate, Owner.Name, Account_Status__c FROM Account];
     }
+
+    @AuraEnabled
+    public static list<Account> getAccountId(String accountName, String accountWebsite){
+        Account acc = new Account();
+        acc.Name = accountName;
+        acc.Website = accountWebsite;
+        insert acc;
+        System.debug('Account C reated');
+        return [SELECT Id from Account WHERE Name =: accountName];
+    }
 }

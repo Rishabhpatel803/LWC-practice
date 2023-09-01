@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Parent Child Record Senario 9 Without Form">
+        <div class="slds-var-p-around_medium">
+            <lightning-input name="accountName" label="Account Name" onchange={handleChange}></lightning-input>
+            <lightning-input name="firstName" label="Contact First Name" onchange={handleChange}></lightning-input>
+            <lightning-input name="lastName" label="Contact Last Name" onchange={handleChange}></lightning-input>
+            <lightning-input name="email" label="Contact Email" onchange={handleChange}></lightning-input>
+            <lightning-input name="accountWebsite" label="Account Website" onchange={handleChange}></lightning-input>
+            <lightning-input name="phoneNo" label="Contact Phone  No" onchange={handleChange}></lightning-input>
+            <br/>
+            <lightning-button-group class="slds-align_absolute-center">
+                <lightning-button label="Cancel" variant="neutral" onclick={handleClose}></lightning-button>
+                <lightning-button label="Save & New" variant="neutral" onclick={handleSubmit}></lightning-button>
+                <lightning-button label="Save" variant="brand" onclick={handleSave}></lightning-button>
+            </lightning-button-group>
+        </div>
+    </lightning-card>
+</template>
