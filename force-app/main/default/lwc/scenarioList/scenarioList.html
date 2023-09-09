@@ -2,6 +2,19 @@
     <lightning-card title="Scenario List with Code Link">
         <div class="slds-var-p-around_medium">
             <lightning-accordion>
+
+                <lightning-accordion-section name="Scenario 1" label="Scenario 1">
+                    <div class="slds-box">
+                        <div>Business want to see a consolidated view of pending approvals along with related record fields info. </div>
+                        <br/>
+                        <div class="slds-grid">
+                            <a href={urlScenario1} class="slds-button slds-button_brand slds-col" target={urlScenario1}>Show Scenario</a>
+                            <a href={urlSolution1} class="slds-button slds-button_brand slds-col" target={urlSolution1}>LWC Component</a>
+                            <a href={urlApex1} class="slds-button slds-button_brand slds-col" target={urlApex1}>Apex Component</a>
+                        </div>
+                    </div>
+                </lightning-accordion-section>
+
                 <lightning-accordion-section name="Scenario 2" label="Scenario 2">
                     <div class="slds-box">
                         <div>Create a Lightning Web Component which can be placed in a Lightning App Page where users can do quick calculations like Addition, Subtraction, Multiplication & Division.</div>

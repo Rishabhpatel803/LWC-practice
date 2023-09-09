@@ -2,6 +2,10 @@ import { LightningElement } from 'lwc';
 
 export default class ScenarioList extends LightningElement {
 
+    urlScenario1 = 'https://salesforcediaries.com/2022/09/17/lwc-exchange-scenario-1/';
+    urlSolution1 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/scenarioOne';
+    urlApex1 = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/approvalData.cls';
+
     urlScenario2 = 'https://salesforcediaries.com/2022/09/17/lwc-exchange-scenario-2';
     urlSolution2Parent = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/scenarioTwoParent';
     urlSolution2Child = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/scenarioTwoChild';
