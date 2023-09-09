@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Org Level Pending Approvals Scenario 1">
+        <div class="slds-var-p-around_medium">
+            <lightning-tabset>
+                <lightning-tab label="Opportunity" >
+                    <lightning-datatable
+                        key-field="Id"
+                        data={opportunityData}
+                        columns={opportunityColumns}
+                        hide-checkbox-column>
+                    </lightning-datatable>
+                    <br/>
+                    <lightning-button label="Download as CSV" title="Download as CSV" variant="brand" onclick={opportunityCSV}></lightning-button>
+                </lightning-tab>
+                <lightning-tab label="Account">
+                    <lightning-datatable
+                        key-field="Id"
+                        data={accountData}
+                        columns={accountColumns}
+                        hide-checkbox-column>
+                    </lightning-datatable>
+                    <br/>
+                    <lightning-button label="Download as CSV" title="Download as CSV" variant="brand" onclick={accountCSV}></lightning-button>
+                </lightning-tab>
+                <lightning-tab label="Case">
+                    <lightning-datatable
+                        key-field="Id"
+                        data={caseData}
+                        columns={caseColumns}
+                        hide-checkbox-column>
+                    </lightning-datatable>
+                    <br/>
+                    <lightning-button label="Download as CSV" title="Download as CSV" variant="brand" onclick={caseCSV}></lightning-button>
+                </lightning-tab>
+            </lightning-tabset>
+        </div>
+    </lightning-card>
+</template>
