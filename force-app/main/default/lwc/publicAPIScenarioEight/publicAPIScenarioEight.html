@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Public API Callout Scenario 8">
+        <div class="slds-var-p-around_medium">
+            <lightning-button label="Get Random Activity" variant="brand" onclick={handleCallout}></lightning-button>
+            <br/>
+            <br/>
+            <template if:true={publicActivity}>
+                <ul class="slds-box">
+                    <template for:each={publicActivity} for:item="dataMap">
+                        <li key={dataMap.key}><b>{dataMap.key} : </b>{dataMap.value}</li>
+                    </template>
+                </ul>
+            </template>
+        </div>
+    </lightning-card>
+</template>
