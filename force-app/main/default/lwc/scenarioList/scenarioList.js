@@ -27,6 +27,10 @@ export default class ScenarioList extends LightningElement {
     urlSolution7Other = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/personTable';
     urlSolutionPubSub = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/pubsub';
 
+    urlScenario8 = 'https://salesforcediaries.com/2023/04/16/lwc-exchange-scenario-8';
+    urlSolution8 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/publicAPIScenarioEight';
+    urlApex8 = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/publicAPICallout.cls';
+
     urlScenario11 = 'https://salesforcediaries.com/2023/05/28/lwc-exchange-scenario-11';
     urlSolution11 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/fileUploader';
 
@@ -34,6 +38,10 @@ export default class ScenarioList extends LightningElement {
     urlSolution12 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/customLightningDataTable';
     urlApex12 = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/AccountController.cls';
     urlSolution12Support = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/customDataTable';
+
+    urlScenario13 = 'https://salesforcediaries.com/2023/09/10/lwc-exchange-scenario-13';
+    urlSolution13 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/dynamicRendering';
+    urlApex13 = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/AccountController.cls';
 
     accountSearchLWC = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/accountSearch';
     accountSearchApex = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/ReusableLookupController.cls';
