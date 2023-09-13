@@ -43,6 +43,10 @@ export default class ScenarioList extends LightningElement {
     urlSolution13 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/dynamicRendering';
     urlApex13 = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/AccountController.cls';
 
+    urlScenario15 = 'https://salesforcediaries.com/2023/09/10/lwc-exchange-scenario-15/';
+    urlSolution15 = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/documentInfoTable';
+    urlApex15 = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/MetaData.cls';
+
     accountSearchLWC = 'https://github.com/Rishabhpatel803/LWC-practice/tree/master/force-app/main/default/lwc/accountSearch';
     accountSearchApex = 'https://github.com/Rishabhpatel803/LWC-practice/blob/master/force-app/main/default/classes/ReusableLookupController.cls';
 }
