@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Dynamic Rendering Scenario 13">
+        <div class="slds-var-p-around_medium">
+            <lightning-button label="Get Account" variant="brand" onclick={handleClick}></lightning-button>
+            <br/>
+            <br/>
+            <template if:true={accountData}>
+                <div class="slds-box">
+                    <template for:each={accountData} for:item="accData">
+                        <div key={accData.Id} class="slds-box">
+                            <lightning-accordion allow-multiple-sections-open>
+                                <lightning-accordion-section name={accData.Name} label={accData.Name}>
+                                    <div class="slds-var-p-around_medium">
+                                        <b>Id : </b>{accData.Id}<br>
+                                        <b>Name : </b>{accData.Name}<br>
+                                        <b>Industry : </b>{accData.Industry}
+                                    </div>
+                                </lightning-accordion-section>
+                            </lightning-accordion>
+                        </div>
+                        <!---<li key={accData.Id}>-->
+                            
+                        <!---</li>-->
+                    </template>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
