@@ -15,6 +15,6 @@ export default class DataListener extends LightningElement {
     handleEvent(messageFromEvt) {
         this.passedData = messageFromEvt
         ? JSON.stringify(messageFromEvt, null, "\t")
-        : "no message payload";
+        : "No Value Passed";
     }
 }
