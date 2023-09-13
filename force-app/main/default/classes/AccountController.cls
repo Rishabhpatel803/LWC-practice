@@ -25,4 +25,9 @@ public with sharing class AccountController {
         System.debug('Account C reated');
         return [SELECT Id from Account WHERE Name =: accountName];
     }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Account> getAccountDetails(){
+        return [SELECT Id, Name, Industry FROM Account WHERE Industry != 'Agriculture'];
+    }
 }
