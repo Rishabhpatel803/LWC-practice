@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Upsert and Fetch Account">
+        <div class="slds-var-p-around_medium">
+            <lightning-input label="Account Name" placeholder="Enter the name of Account" type="text" onchange={handleChange}></lightning-input>
+            <lightning-input label="Account Number" placeholder="Enter the phone No" type="number" onchange={handleChange}></lightning-input>
+            <br/>
+            <lightning-button label="Insert Account" variant="brand" onclick={handleClick}></lightning-button>
+            <br/>
+            <br/>
+            <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={column}
+                    hide-checkbox-column>
+                </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
