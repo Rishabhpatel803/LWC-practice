@@ -21,7 +21,7 @@ The `sfdx-project.json` file contains useful configuration information for your 
 
 Username : <rishabh.patel2@brave-shark-alhw7h.com>
 
-Password : Rock@rishabh1
+Password : Makadaka@123
 
 ### Practice Scenarios : Salesforce Diaries (<https://salesforcediaries.com/category/lwc-practice-scenarios>)
 
